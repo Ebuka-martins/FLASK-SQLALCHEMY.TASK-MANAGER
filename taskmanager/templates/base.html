@@ -10,26 +10,26 @@
     <title>Task Manager</title>
 </head>
 <body>
-    <header class="teal lighten-2">
+    <header>
         <!-- top navbar -->
         <nav class="light-blue darken-1">
-          <div class="nav-wrapper">
-          <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-          <ul class="right hide-on-med-and-down">
-              <li><a href="{{ url_for('home') }}">Home</a></li>
-              <li><a href="">New Task</a></li>
-              <li><a href="">Categories</a></li>
-          </ul>
-          </div>
-      </nav>
+            <div class="nav-wrapper">
+            <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="">New Task</a></li>
+                <li><a href="">Categories</a></li>
+            </ul>
+            </div>
+        </nav>
 
-      <!-- mobile sidenav -->
-      <ul class="sidenav" id="mobile-demo">
-          <li><a href="{{ url_for('home') }}">Home</a></li>
-          <li><a href="">New Task</a></li>
-          <li><a href="">Categories</a></li>
-      </ul>
+        <!-- mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="">New Task</a></li>
+            <li><a href="">Categories</a></li>
+        </ul>
     </header>
 
     <main class="container">
@@ -37,14 +37,14 @@
         {% endblock %}
     </main>
 
-    <footer class="page-footer teal lighten-2">
+    <footer class="page-footer blue darken-3">
         <div class="footer-copyright">
-          <div class="container">
-          FOR CODING PURPOSES ONLY
-          <a class="white-text right" href="https://codeinstitute.net" target="_blank">&copy; Code Institute</a>
-          </div>
+            <div class="container">
+                For educational purposes only
+                <a class="white-text right" href="https://codeinstitute.net" target="_blank">&copy; Code Institute</a>
+            </div>
         </div>
-      </footer>
+    </footer>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
